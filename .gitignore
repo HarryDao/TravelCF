@@ -1,0 +1,8 @@
+webapp-and-server/node_modules/**/*
+webapp-and-server/configs
+webapp-and-server/dist
+hybrid-mobile-app/node_modules/**/*
+hybrid-mobile-app/.expo/*
+hybrid-mobile-app/npm-debug.*
+hybrid-mobile-app/configs
+images
