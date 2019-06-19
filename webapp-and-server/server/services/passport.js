@@ -8,7 +8,7 @@ const {
 const User = require('../controller/user');
 
 const { tables: { users: { table: TABLE_USER } } } = require('../../db/queries');
-const { JWT: { SECRET } } = require('../../configs/server');
+const { JWT: { SECRET } } = require('../../configs/server-main');
 
 
 const jwtOptions = {

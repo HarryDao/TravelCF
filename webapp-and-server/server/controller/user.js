@@ -11,8 +11,8 @@ const {
     FRONT_APP_URL, 
     JWT: { SECRET, TOKEN_ID_LENGTH }, 
     OAUTH_GOOGLE
-} = require('../../configs/server');
-const { MAX_SAVED_SEARCHES } = require('../../configs/server');
+} = require('../../configs/server-main');
+const { MAX_SAVED_SEARCHES } = require('../../configs/server-main');
 const { PAGES } = require('../../configs/app');
 
 const encodeText = (text) => {

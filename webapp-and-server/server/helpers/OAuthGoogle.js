@@ -10,7 +10,7 @@ const {
         REDIRECT_URL, 
         SCOPES
     }
-} = require('../../configs/server');
+} = require('../../configs/server-main');
 
 const client = new google.auth.OAuth2(
     CLIENT_ID,

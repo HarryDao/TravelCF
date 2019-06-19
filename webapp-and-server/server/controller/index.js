@@ -1,7 +1,7 @@
 const Url = require('url');
 const { Pool, Client } = require('pg');
 
-const { PSQL_URL } = require('../../configs/server');
+const { PSQL_URL } = require('../../configs/server-main');
 
 module.exports = class Postgres {
     constructor() {

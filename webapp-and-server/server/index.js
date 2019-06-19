@@ -12,7 +12,6 @@ app.use(CORS());
 app.use(BodyParser.json({ type: '*/*' }));
 app.use(Morgan('dev'));
 
-
 if (IS_PROXY) {
     const proxy = require('./routers/proxy');
     proxy(app);
@@ -27,7 +26,19 @@ else {
     routers(app);
 }
 
+// For heroku setup to combine server and front end
+
+// app.use(Express.static(Path.join(__dirname, '../dist'))); 
+
+// const routers = require('./routers');
+// routers(app);
+
+// app.get('*', (req, res) => {
+//     res.sendFile(Path.join(__dirname, '../dist/index.html'));
+// });
+
 
 app.listen(PORT, () => {
     console.log(`Server serving on port ${PORT}`);
 });
+
